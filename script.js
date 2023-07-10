@@ -1,3 +1,33 @@
+class Cat {
+    constructor(meow, loudMeow, color){
+        this.meow = meow,
+        this.loudMeow = loudMeow,
+        this.color = color
+    }
+    quietMeow(){
+        console.log(`${this.meow}`)
+    }
+    louderMeow(){
+        console.log(`${this.loudMeow}`)
+    }
+    catColor(){
+        console.log(`I am a ${this.color} cat!`)
+    }
+
+}
+
+const Cat1 = new Cat('meowwwww',"MEOOOOOW!", 'black');
+const Cat2 = new Cat('mew','MEOOOOWOWOW!', 'multi-color');
+
+Cat1.quietMeow();
+Cat1.louderMeow();
+Cat1.catColor();
+
+Cat2.quietMeow();
+Cat2.louderMeow();
+Cat2.catColor();
+
+
 class Pirate {
     constructor(beardColor, sword, legs){
         this.beardColor = beardColor,
